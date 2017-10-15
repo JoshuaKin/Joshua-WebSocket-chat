@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>基于socket.io实现简单多人聊天室</title>
+    <link type="text/css" rel="stylesheet" href="css/chat.css">
+    <script src="https://cdn.bootcss.com/socket.io/2.0.3/socket.io.js"></script>
+    <script type="text/javascript" src="js/JoshuaJs-1.0.5.js"></script>
+</head>
+
+<body>
+    <!-- /*登录界面*/ -->
+    <div class="login-wrap" id="login-wrap">
+        <div class="login-con">
+            <h3>用户登录</h3>
+            <input type="text" placeholder="请输入昵称" id="loginName">
+            <button class="login-btn" id="login-btn">登录</button>
+        </div>
+    </div>
+    <!-- /*聊天界面，一开始隐藏，用户登录成功后再显示*/ -->
+    <div class="chat-wrap hide" id="chat-wrap">
+        <h1>多人聊天室</h1>
+        <div class="chat-con clearfix" id="chatDiv"></div>
+        <div class="bottom">
+            <input type="text" id="send-txt">
+            <button class="sendBtn" id='send-btn'>发送</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/chat.js"></script>
+</body>
+
+</html>
