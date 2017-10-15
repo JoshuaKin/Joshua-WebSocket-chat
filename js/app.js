@@ -6,7 +6,8 @@ var app = require('http').createServer()
 /*引入socket.io*/
 var io = require('socket.io')(app);
 /*定义监听端口，可以自定义，端口不要被占用*/
-var PORT = 8081;
+// var PORT = 8081;
+var PORT = 3389;/*3389 阿里云开放监听端口*/
 /*用户数组替代数据库*/
 var users = [];
 /*监听端口*/
